@@ -1,7 +1,6 @@
 .buildlog
 .pub/
 build/
-packages
 .packages
 *.dart.js
 *.js_

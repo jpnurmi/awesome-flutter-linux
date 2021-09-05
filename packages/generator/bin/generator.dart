@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:awesome_flutter_linux/includes.dart';
+import 'package:generator/includes.dart';
 
 const _kAutoGenMark = '<!--AUTO-GENERATE-->';
 
