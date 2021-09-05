@@ -1,8 +1,8 @@
 class Project {
-  String name;
-  String description;
-  String repo;
-  String url;
+  String? name;
+  String? description;
+  String? repo;
+  String? url;
   String get githubUrl => 'https://github.com/$repo';
   String get githubBadgeStars =>
       'https://img.shields.io/github/stars/${repo}?style=social';
@@ -22,8 +22,6 @@ class Project {
   });
 
   factory Project.fromJson(Map<String, dynamic> json) {
-    if (json == null) return null;
-
     return Project(
       name: json['name'],
       description: json['description'],

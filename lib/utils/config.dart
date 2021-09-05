@@ -14,10 +14,10 @@ class Config {
   static final Config instance = Config._();
 
   void parse(YamlMap json) {
-    env = json['env'] as String;
-    githubToken = json['githubToken'] as String;
+    env = json['env'] as String?;
+    githubToken = json['githubToken'] as String?;
   }
 
-  String env;
-  String githubToken;
+  String? env;
+  String? githubToken;
 }

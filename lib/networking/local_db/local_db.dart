@@ -13,28 +13,28 @@ export 'modifiers/projects_modifier.dart';
 export 'modifiers/packages_modifier.dart';
 
 class LocalDb {
-  final DbData defaultDbData;
+  final DbData? defaultDbData;
 
   LocalDb({
     this.defaultDbData,
   });
 
-  DbData dbData;
+  DbData? dbData;
 
-  Map<String, dynamic> _cacheMap = {};
+  Map<String, dynamic>? _cacheMap = {};
 
-  PubClient _pubClient;
-  GitHub _githubClient;
+  PubClient? _pubClient;
+  GitHub? _githubClient;
 
-  ProjectsModifier _projectsModifier;
-  PackagesModifier _packagesModifier;
+  ProjectsModifier? _projectsModifier;
+  PackagesModifier? _packagesModifier;
 
-  PubClient get pubClient {
+  PubClient? get pubClient {
     if (_pubClient == null) _pubClient = PubClient();
     return _pubClient;
   }
 
-  GitHub get githubClient {
+  GitHub? get githubClient {
     if (_githubClient == null) {
       _githubClient = GitHub(
         auth: Authentication.withToken(sharedConfig.githubToken),
@@ -57,14 +57,14 @@ class LocalDb {
       if (project.description == null) {
         String cacheKey = 'github#${project.repo}';
         Repository repository;
-        if (_cacheMap.containsKey(cacheKey)) {
-          repository = Repository.fromJson(_cacheMap[cacheKey]);
+        if (_cacheMap!.containsKey(cacheKey)) {
+          repository = Repository.fromJson(_cacheMap![cacheKey]);
         } else {
-          repository = await githubClient.repositories.getRepository(
+          repository = await githubClient!.repositories.getRepository(
             RepositorySlug(
-                project.repo.split('/')[0], project.repo.split('/')[1]),
+                project.repo!.split('/')[0], project.repo!.split('/')[1]),
           );
-          _cacheMap.putIfAbsent(cacheKey, () => repository.toJson());
+          _cacheMap!.putIfAbsent(cacheKey, () => repository.toJson());
         }
         project.description = repository.description;
       }
@@ -86,11 +86,11 @@ class LocalDb {
         String cacheKey = 'pub#${package.name}';
 
         PubPackage pubPackage;
-        if (_cacheMap.containsKey(cacheKey)) {
-          pubPackage = PubPackage.fromJson(_cacheMap[cacheKey]);
+        if (_cacheMap!.containsKey(cacheKey)) {
+          pubPackage = PubPackage.fromJson(_cacheMap![cacheKey]);
         } else {
-          pubPackage = await pubClient.packageInfo(package.name);
-          _cacheMap.update(
+          pubPackage = await pubClient!.packageInfo(package.name!);
+          _cacheMap!.update(
             cacheKey,
             (_) => pubPackage.toJson(),
             ifAbsent: () => pubPackage.toJson(),
@@ -104,7 +104,7 @@ class LocalDb {
     return packageList;
   }
 
-  Future<DbData> read() async {
+  Future<DbData?> read() async {
     this.dbData = defaultDbData;
 
     File _cacheFile = File('.cache.json');
@@ -119,8 +119,8 @@ class LocalDb {
     projectList = await _readProjectList('projects.yaml');
     packageList = await _readPackageList('packages.yaml');
 
-    this.dbData.projectList = []..addAll(projectList);
-    this.dbData.packageList = packageList;
+    this.dbData!.projectList = []..addAll(projectList);
+    this.dbData!.packageList = packageList;
 
     final String cacheJsonString = prettyJsonString(_cacheMap);
     _cacheFile.writeAsStringSync(cacheJsonString);
@@ -128,34 +128,34 @@ class LocalDb {
     return this.dbData;
   }
 
-  ProjectsModifier get projects {
+  ProjectsModifier? get projects {
     return project(null);
   }
 
-  ProjectsModifier project(String name) {
+  ProjectsModifier? project(String? name) {
     if (_projectsModifier == null) {
       _projectsModifier = ProjectsModifier(this.dbData);
     }
-    _projectsModifier.setName(name);
+    _projectsModifier!.setName(name);
     return _projectsModifier;
   }
 
-  PackagesModifier get packages {
+  PackagesModifier? get packages {
     return package(null);
   }
 
-  PackagesModifier package(String name) {
+  PackagesModifier? package(String? name) {
     if (_packagesModifier == null) {
       _packagesModifier = PackagesModifier(this.dbData);
     }
-    _packagesModifier.setName(name);
+    _packagesModifier!.setName(name);
     return _packagesModifier;
   }
 }
 
 class DbData {
-  List<Project> projectList;
-  List<Package> packageList;
+  List<Project>? projectList;
+  List<Package>? packageList;
 
   DbData({
     this.projectList,
@@ -163,8 +163,6 @@ class DbData {
   });
 
   factory DbData.fromJson(Map<String, dynamic> json) {
-    if (json == null) return null;
-
     List<Project> projectList = [];
     List<Package> packageList = [];
 

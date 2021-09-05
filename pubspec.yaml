@@ -2,7 +2,7 @@ name: awesome_flutter_desktop
 publish_to: "none"
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   github: ^8.1.1

@@ -10,11 +10,11 @@ void main(List<String> args) async {
   File file = File('./README.md');
   String content = file.readAsStringSync();
 
-  List<Project> projectList = sharedLocalDb.projects.list();
-  List<Package> packageList = sharedLocalDb.packages.list();
+  List<Project> projectList = sharedLocalDb.projects!.list()!;
+  List<Package> packageList = sharedLocalDb.packages!.list()!;
 
-  projectList.sort((a, b) => a.name.compareTo(b.name));
-  packageList.sort((a, b) => a.name.compareTo(b.name));
+  projectList.sort((a, b) => a.name!.compareTo(b.name!));
+  packageList.sort((a, b) => a.name!.compareTo(b.name!));
 
   String md = '''
 ## Packages

@@ -1,7 +1,7 @@
 class Package {
-  String name;
-  String description;
-  String repo;
+  String? name;
+  String? description;
+  String? repo;
   String get url => 'https://pub.dev/packages/$name';
   String get githubUrl => 'https://github.com/$repo';
   String get githubBadgeStars =>
@@ -11,7 +11,7 @@ class Package {
     String linkedName = '[${name}](${url})';
     String linkedBadgeStars =
         '[![GitHub Repo stars]($githubBadgeStars)]($githubUrl)';
-    return '| $linkedName | $linkedBadgeStars | ${description.replaceAll('\n', ' ')} |';
+    return '| $linkedName | $linkedBadgeStars | ${description!.replaceAll('\n', ' ')} |';
   }
 
   Package({
@@ -21,8 +21,6 @@ class Package {
   });
 
   factory Package.fromJson(Map<String, dynamic> json) {
-    if (json == null) return null;
-
     return Package(
       name: json['name'],
       description: json['description'],

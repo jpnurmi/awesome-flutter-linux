@@ -3,36 +3,36 @@ import '../../../includes.dart';
 import '../local_db.dart';
 
 class ProjectsModifier {
-  final DbData dbData;
+  final DbData? dbData;
 
   ProjectsModifier(this.dbData);
 
-  String _name;
+  String? _name;
 
-  void setName(String name) {
+  void setName(String? name) {
     _name = name;
   }
 
   int get _projectIndex {
-    return dbData.projectList.indexWhere((e) => e.name == _name);
+    return dbData!.projectList!.indexWhere((e) => e.name == _name);
   }
 
-  List<Project> get _projectList {
-    return dbData.projectList;
+  List<Project>? get _projectList {
+    return dbData!.projectList;
   }
 
-  List<Project> list({
-    bool where(Project element),
+  List<Project>? list({
+    bool where(Project element)?,
   }) {
     if (where != null) {
-      return _projectList.where(where).toList();
+      return _projectList!.where(where).toList();
     }
     return _projectList;
   }
 
-  Project get() {
+  Project? get() {
     if (exists()) {
-      return _projectList[_projectIndex];
+      return _projectList![_projectIndex];
     }
     return null;
   }
