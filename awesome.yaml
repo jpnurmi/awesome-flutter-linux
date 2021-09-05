@@ -1,47 +1,69 @@
 packages:
-  - name: adwaita_icons
+  - name: Adwaita Icons
+    pub: adwaita_icons
     repo: jesusrp98/adwaita_icons
-  - name: appstream
+  - name: Appstream
+    pub: appstream
     repo: canonical/appstream.dart
-  - name: avahi
+  - name: Avahi
+    pub: avahi
     repo: canonical/avahi.dart
-  - name: bluez
+  - name: BlueZ
+    pub: bluez
     repo: canonical/bluez.dart
-  - name: dbus
+  - name: D-Bus
+    pub: dbus
     repo: canonical/dbus.dart
-  - name: desktop_notifications
+  - name: Desktop Notifications
+    pub: desktop_notifications
     repo: canonical/desktop_notifications.dart
-  - name: flutter_gpiod
+  - name: GPIO
+    pub: flutter_gpiod
     repo: ardera/flutter_gpiod
   - name: fwupd
+    pub: fwupd
     repo: canonical/fwupd.dart
-  - name: gsettings
+  - name: GSettings
+    pub: gsettings
     repo: canonical/gsettings.dart
-  - name: gtk
+  - name: GTK
+    pub: gtk
     repo: prateekmedia/gtk-flutter
-  - name: linux_system_info
+  - name: Linux System Info
+    pub: linux_system_info
     repo: LolzDEV/linux_system_info
-  - name: lxd
+  - name: LXD
+    pub: lxd
     repo: canonical/lxd.dart
-  - name: nm
+  - name: Network Manager
+    pub: nm
     repo: canonical/nm.dart
-  - name: packagekit
+  - name: PackageKit
+    pub: packagekit
     repo: canonical/packagekit.dart
-  - name: posix
+  - name: POSIX
+    pub: posix
     repo: noojee/dart_posix
   - name: snapd
+    pub: snapd
     repo: canonical/snapd.dart
-  - name: udisks
+  - name: UDisks
+    pub: udisks
     repo: canonical/udisks.dart
-  - name: upower
+  - name: UPower
+    pub: upower
     repo: canonical/upower.dart
-  - name: xdg_directories
+  - name: XDG directories
+    pub: xdg_directories
     repo: flutter/packages
-  - name: yaru
+  - name: Yaru Style
+    pub: yaru
     repo: ubuntu/yaru.dart
-  - name: yaru_icons
+  - name: Yaru Icons
+    pub: yaru_icons
     repo: ubuntu/yaru_icons.dart
   - name: xterm
+    pub: xterm
     repo: TerminalStudio/xterm.dart
 
 projects:
@@ -50,10 +72,10 @@ projects:
   - name: flutter_embedded
     description: Alternative Flutter shells for Embedded Linux.
     repo: jwinarske/flutter_embedded
-  - name: flutter-embedded-linux
+  - name: Flutter Embedded Linux
     description: Embedded Linux Flutter embedder by Sony.
     repo: sony/flutter-embedded-linux
-  - name: flutter-pi
+  - name: Flutter Pi
     description: A light-weight Flutter Engine Embedder for Raspberry Pi.
     repo: ardera/flutter-pi
   - name: meta-flutter

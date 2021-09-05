@@ -79,7 +79,7 @@ class LocalDb {
         if (_cacheMap!.containsKey(cacheKey)) {
           pubPackage = PubPackage.fromJson(_cacheMap![cacheKey]);
         } else {
-          pubPackage = await pubClient!.packageInfo(package.name!);
+          pubPackage = await pubClient!.packageInfo(package.pub!);
           _cacheMap!.update(
             cacheKey,
             (_) => pubPackage.toJson(),
