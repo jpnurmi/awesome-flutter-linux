@@ -5,5 +5,5 @@ scripts:
   generate: >
     melos exec --scope "generator" dart run bin/generator.dart \
       --config MELOS_ROOT_PATH/config.yaml \
-      --input MELOS_ROOT_PATH \
+      --input MELOS_ROOT_PATH/awesome.yaml \
       --output MELOS_ROOT_PATH/README.md

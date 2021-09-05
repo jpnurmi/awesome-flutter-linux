@@ -1,0 +1,73 @@
+packages:
+  - name: adwaita_icons
+    repo: jesusrp98/adwaita_icons
+  - name: appstream
+    repo: canonical/appstream.dart
+  - name: avahi
+    repo: canonical/avahi.dart
+  - name: bluez
+    repo: canonical/bluez.dart
+  - name: dbus
+    repo: canonical/dbus.dart
+  - name: desktop_notifications
+    repo: canonical/desktop_notifications.dart
+  - name: flutter_gpiod
+    repo: ardera/flutter_gpiod
+  - name: fwupd
+    repo: canonical/fwupd.dart
+  - name: gsettings
+    repo: canonical/gsettings.dart
+  - name: gtk
+    repo: prateekmedia/gtk-flutter
+  - name: linux_system_info
+    repo: LolzDEV/linux_system_info
+  - name: lxd
+    repo: canonical/lxd.dart
+  - name: nm
+    repo: canonical/nm.dart
+  - name: packagekit
+    repo: canonical/packagekit.dart
+  - name: posix
+    repo: noojee/dart_posix
+  - name: snapd
+    repo: canonical/snapd.dart
+  - name: udisks
+    repo: canonical/udisks.dart
+  - name: upower
+    repo: canonical/upower.dart
+  - name: xdg_directories
+    repo: flutter/packages
+  - name: yaru
+    repo: ubuntu/yaru.dart
+  - name: yaru_icons
+    repo: ubuntu/yaru_icons.dart
+  - name: xterm
+    repo: TerminalStudio/xterm.dart
+
+projects:
+  - name: AppImagePool
+    repo: prateekmedia/appimagepool
+  - name: flutter_embedded
+    description: Alternative Flutter shells for Embedded Linux.
+    repo: jwinarske/flutter_embedded
+  - name: flutter-embedded-linux
+    description: Embedded Linux Flutter embedder by Sony.
+    repo: sony/flutter-embedded-linux
+  - name: flutter-pi
+    description: A light-weight Flutter Engine Embedder for Raspberry Pi.
+    repo: ardera/flutter-pi
+  - name: meta-flutter
+    repo: jwinarske/meta-flutter
+  - name: Pangolin Desktop UI
+    repo: dahliaOS/pangolin_desktop
+  - name: terminal
+    repo: dahliaOS/terminal
+  - name: Ubuntu Desktop Installer
+    description: A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
+    repo: canonical/ubuntu-desktop-installer
+  - name: Ubuntu Desktop Settings
+    description: An unofficial Ubuntu Desktop Settings App made with Flutter.
+    repo: Feichtmeier/settings
+  - name: Ubuntu Software Store
+    description: An unofficial software store for Ubuntu Desktop made with Flutter.
+    repo: Feichtmeier/ubuntu-software-store

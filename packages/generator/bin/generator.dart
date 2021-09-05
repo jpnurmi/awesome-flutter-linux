@@ -19,7 +19,7 @@ Future<void> main(List<String> args) async {
     abbr: 'i',
     valueHelp: 'path',
     defaultsTo: Directory.current.path,
-    help: 'The input path that contains packages.yaml and projects.yaml.',
+    help: 'Path to awesome.yaml.',
   );
   parser.addOption(
     'output',

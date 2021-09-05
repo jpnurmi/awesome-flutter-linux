@@ -43,15 +43,9 @@ class LocalDb {
     return _githubClient;
   }
 
-  Future<List<Project>> _readProjectList(String fileName) async {
-    File file = File(fileName);
-    String content = file.readAsStringSync();
-    var doc = loadYaml(content);
-
-    if (doc == null) return [];
-
+  Future<List<Project>> _readProjectList(YamlList items) async {
     List<Project> projectList = [];
-    for (var item in doc) {
+    for (var item in items) {
       Project project = Project.fromJson(Map<String, dynamic>.from(item));
 
       if (project.description == null) {
@@ -73,13 +67,9 @@ class LocalDb {
     return projectList;
   }
 
-  Future<List<Package>> _readPackageList(String fileName) async {
-    File file = File(fileName);
-    String content = file.readAsStringSync();
-    var doc = loadYaml(content);
-
+  Future<List<Package>> _readPackageList(YamlList items) async {
     List<Package> packageList = [];
-    for (var item in doc) {
+    for (var item in items) {
       Package package = Package.fromJson(Map<String, dynamic>.from(item));
 
       if (package.description == null) {
@@ -116,8 +106,12 @@ class LocalDb {
     List<Project> projectList;
     List<Package> packageList;
 
-    projectList = await _readProjectList('$path/projects.yaml');
-    packageList = await _readPackageList('$path/packages.yaml');
+    File file = File(path);
+    String content = file.readAsStringSync();
+    YamlMap doc = loadYaml(content);
+
+    projectList = await _readProjectList(doc['projects'] as YamlList);
+    packageList = await _readPackageList(doc['packages'] as YamlList);
 
     this.dbData!.projectList = []..addAll(projectList);
     this.dbData!.packageList = packageList;
