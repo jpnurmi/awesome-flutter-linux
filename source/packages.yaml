@@ -1,6 +1,30 @@
+- name: appstream
+  repo: canonical/appstream.dart
+- name: avahi
+  repo: canonical/avahi.dart
+- name: bluez
+  repo: canonical/bluez.dart
 - name: dbus
-  repo: canonical/dbus
+  repo: canonical/dbus.dart
+- name: desktop_notifications
+  repo: canonical/desktop_notifications.dart
+- name: fwupd
+  repo: canonical/fwupd.dart
+- name: gsettings
+  repo: canonical/gsettings.dart
 - name: gtk
   repo: prateekmedia/gtk-flutter
+- name: lxd
+  repo: canonical/lxd.dart
+- name: nm
+  repo: canonical/nm.dart
+- name: packagekit
+  repo: canonical/packagekit.dart
+- name: snapd
+  repo: canonical/snapd.dart
+- name: udisks
+  repo: canonical/udisks.dart
+- name: upower
+  repo: canonical/upower.dart
 - name: yaru
   repo: ubuntu/yaru.dart
