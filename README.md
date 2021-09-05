@@ -6,18 +6,6 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 
 ---
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [awesome-flutter-desktop](#awesome-flutter-desktop)
-  - [Packages](#packages)
-  - [Open Source Apps](#open-source-apps)
-  - [Discussion](#discussion)
-  - [Contribution](#contribution)
-  - [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 <!--AUTO-GENERATE-->
 ## Packages
 
