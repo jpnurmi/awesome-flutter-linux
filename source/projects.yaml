@@ -4,3 +4,6 @@
 - name: Ubuntu Desktop Installer
   description: A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
   repo: canonical/ubuntu-desktop-installer
+- name: Ubuntu Desktop Settings
+  description: An unofficial Ubuntu Desktop Settings App made with Flutter.
+  repo: Feichtmeier/settings
