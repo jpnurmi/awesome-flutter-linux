@@ -1,3 +1,5 @@
+- name: AppImagePool
+  repo: prateekmedia/appimagepool
 - name: flutter_embedded
   description: Alternative Flutter shells for Embedded Linux.
   repo: jwinarske/flutter_embedded
