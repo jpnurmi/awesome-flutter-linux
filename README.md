@@ -31,11 +31,12 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 | [xdg_directories](https://pub.dev/packages/xdg_directories) | [![GitHub Repo stars](https://img.shields.io/github/stars/flutter/packages?style=social)](https://github.com/flutter/packages) | A Dart package for reading XDG directory configuration information on Linux. |
 | [yaru](https://pub.dev/packages/yaru) | [![GitHub Repo stars](https://img.shields.io/github/stars/ubuntu/yaru.dart?style=social)](https://github.com/ubuntu/yaru.dart) | Ubuntu Yaru Style - Distinct look and feel of the Ubuntu Desktop |
 
-## Open Source Apps
+## Projects
 
 | Name | Repo | Description |
 | :--- | :--- | :---------- |
 | [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/ubuntu-desktop-installer?style=social)](https://github.com/canonical/ubuntu-desktop-installer) | A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI. |
+| [flutter-pi](https://github.com/ardera/flutter-pi) | [![GitHub Repo stars](https://img.shields.io/github/stars/ardera/flutter-pi?style=social)](https://github.com/ardera/flutter-pi) | A light-weight Flutter Engine Embedder for Raspberry Pi. |
 
 
 <!--AUTO-GENERATE-->
