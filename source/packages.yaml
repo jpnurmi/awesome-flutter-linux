@@ -40,3 +40,5 @@
   repo: ubuntu/yaru.dart
 - name: yaru_icons
   repo: ubuntu/yaru_icons.dart
+- name: xterm
+  repo: TerminalStudio/xterm.dart
