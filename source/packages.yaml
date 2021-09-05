@@ -8,23 +8,31 @@
   repo: canonical/dbus.dart
 - name: desktop_notifications
   repo: canonical/desktop_notifications.dart
+- name: flutter_gpiod
+  repo: ardera/flutter_gpiod
 - name: fwupd
   repo: canonical/fwupd.dart
 - name: gsettings
   repo: canonical/gsettings.dart
 - name: gtk
   repo: prateekmedia/gtk-flutter
+- name: linux_system_info
+  repo: LolzDEV/linux_system_info
 - name: lxd
   repo: canonical/lxd.dart
 - name: nm
   repo: canonical/nm.dart
 - name: packagekit
   repo: canonical/packagekit.dart
+- name: posix
+  repo: noojee/dart_posix
 - name: snapd
   repo: canonical/snapd.dart
 - name: udisks
   repo: canonical/udisks.dart
 - name: upower
   repo: canonical/upower.dart
+- name: xdg_directories
+  repo: flutter/packages
 - name: yaru
   repo: ubuntu/yaru.dart
