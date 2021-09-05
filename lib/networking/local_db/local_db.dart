@@ -112,17 +112,13 @@ class LocalDb {
       _cacheMap = json.decode(cacheJsonString);
     }
 
-    List<App> closedSourceAppList;
     List<App> openSourceAppList;
     List<Package> packageList;
 
-    closedSourceAppList = await _readAppList('closed-source-apps.yaml');
     openSourceAppList = await _readAppList('open-source-apps.yaml');
     packageList = await _readPackageList('packages.yaml');
 
-    this.dbData.appList = []
-      ..addAll(closedSourceAppList)
-      ..addAll(openSourceAppList);
+    this.dbData.appList = []..addAll(openSourceAppList);
     this.dbData.packageList = packageList;
 
     final String cacheJsonString = prettyJsonString(_cacheMap);
