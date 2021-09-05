@@ -43,4 +43,4 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 
 ## Thanks
 
-This project is based on [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) by @lijy91.
+This project is based on [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) by [@lijy91](https://github.com/lijy91).
