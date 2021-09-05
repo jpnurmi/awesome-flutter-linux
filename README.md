@@ -11,6 +11,7 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 
 | Name | Repo | Description |
 | :--- | :--- | :--- |
+| [adwaita_icons](https://pub.dev/packages/adwaita_icons) | [![GitHub Repo stars](https://img.shields.io/github/stars/jesusrp98/adwaita_icons?style=social)](https://github.com/jesusrp98/adwaita_icons) | Package that contains all icons built for the Adwaita Theme. |
 | [appstream](https://pub.dev/packages/appstream) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/appstream.dart?style=social)](https://github.com/canonical/appstream.dart) | A parser for Appstream data. This package allows Dart applications to access package metadata on Linux systems. |
 | [avahi](https://pub.dev/packages/avahi) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/avahi.dart?style=social)](https://github.com/canonical/avahi.dart) | Provides a client to connect to Avahi - the service that implements mDNS/DNS-SD on Linux. |
 | [bluez](https://pub.dev/packages/bluez) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/bluez.dart?style=social)](https://github.com/canonical/bluez.dart) | Provides a client to connect to BlueZ - the Linux Bluetooth stack. |
@@ -30,6 +31,7 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 | [upower](https://pub.dev/packages/upower) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/upower.dart?style=social)](https://github.com/canonical/upower.dart) | Provides a client to connect to UPower - the service that does power management on Linux. |
 | [xdg_directories](https://pub.dev/packages/xdg_directories) | [![GitHub Repo stars](https://img.shields.io/github/stars/flutter/packages?style=social)](https://github.com/flutter/packages) | A Dart package for reading XDG directory configuration information on Linux. |
 | [yaru](https://pub.dev/packages/yaru) | [![GitHub Repo stars](https://img.shields.io/github/stars/ubuntu/yaru.dart?style=social)](https://github.com/ubuntu/yaru.dart) | Ubuntu Yaru Style - Distinct look and feel of the Ubuntu Desktop |
+| [yaru_icons](https://pub.dev/packages/yaru_icons) | [![GitHub Repo stars](https://img.shields.io/github/stars/ubuntu/yaru_icons.dart?style=social)](https://github.com/ubuntu/yaru_icons.dart) | Ubuntu Yaru Icon theme |
 
 ## Projects
 
