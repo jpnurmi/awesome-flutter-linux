@@ -30,6 +30,7 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 | [udisks](https://pub.dev/packages/udisks) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/udisks.dart?style=social)](https://github.com/canonical/udisks.dart) | Provides a client to connect to UDisks - the service that accesses and manipulates disks, storage devices and technologies on Linux. |
 | [upower](https://pub.dev/packages/upower) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/upower.dart?style=social)](https://github.com/canonical/upower.dart) | Provides a client to connect to UPower - the service that does power management on Linux. |
 | [xdg_directories](https://pub.dev/packages/xdg_directories) | [![GitHub Repo stars](https://img.shields.io/github/stars/flutter/packages?style=social)](https://github.com/flutter/packages) | A Dart package for reading XDG directory configuration information on Linux. |
+| [xterm](https://pub.dev/packages/xterm) | [![GitHub Repo stars](https://img.shields.io/github/stars/TerminalStudio/xterm.dart?style=social)](https://github.com/TerminalStudio/xterm.dart) | xterm.dart is a fast and fully-featured terminal emulator for Flutter applications, with support for mobile and desktop platforms. |
 | [yaru](https://pub.dev/packages/yaru) | [![GitHub Repo stars](https://img.shields.io/github/stars/ubuntu/yaru.dart?style=social)](https://github.com/ubuntu/yaru.dart) | Ubuntu Yaru Style - Distinct look and feel of the Ubuntu Desktop |
 | [yaru_icons](https://pub.dev/packages/yaru_icons) | [![GitHub Repo stars](https://img.shields.io/github/stars/ubuntu/yaru_icons.dart?style=social)](https://github.com/ubuntu/yaru_icons.dart) | Ubuntu Yaru Icon theme |
 
@@ -37,6 +38,7 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 
 | Name | Repo | Description |
 | :--- | :--- | :---------- |
+| [AppImagePool](https://github.com/prateekmedia/appimagepool) | [![GitHub Repo stars](https://img.shields.io/github/stars/prateekmedia/appimagepool?style=social)](https://github.com/prateekmedia/appimagepool) | A simple, modern AppImageHub Client, powered by flutter. |
 | [Pangolin Desktop UI](https://github.com/dahliaOS/pangolin_desktop) | [![GitHub Repo stars](https://img.shields.io/github/stars/dahliaOS/pangolin_desktop?style=social)](https://github.com/dahliaOS/pangolin_desktop) | Pangolin Desktop UI shell, designed for dahliaOS, written in Flutter. |
 | [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/ubuntu-desktop-installer?style=social)](https://github.com/canonical/ubuntu-desktop-installer) | A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI. |
 | [Ubuntu Desktop Settings](https://github.com/Feichtmeier/settings) | [![GitHub Repo stars](https://img.shields.io/github/stars/Feichtmeier/settings?style=social)](https://github.com/Feichtmeier/settings) | An unofficial Ubuntu Desktop Settings App made with Flutter. |
@@ -45,6 +47,7 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 | [flutter-pi](https://github.com/ardera/flutter-pi) | [![GitHub Repo stars](https://img.shields.io/github/stars/ardera/flutter-pi?style=social)](https://github.com/ardera/flutter-pi) | A light-weight Flutter Engine Embedder for Raspberry Pi. |
 | [flutter_embedded](https://github.com/jwinarske/flutter_embedded) | [![GitHub Repo stars](https://img.shields.io/github/stars/jwinarske/flutter_embedded?style=social)](https://github.com/jwinarske/flutter_embedded) | Alternative Flutter shells for Embedded Linux. |
 | [meta-flutter](https://github.com/jwinarske/meta-flutter) | [![GitHub Repo stars](https://img.shields.io/github/stars/jwinarske/meta-flutter?style=social)](https://github.com/jwinarske/meta-flutter) | Yocto meta layer for recipes related to using Google Flutter Engine |
+| [terminal](https://github.com/dahliaOS/terminal) | [![GitHub Repo stars](https://img.shields.io/github/stars/dahliaOS/terminal?style=social)](https://github.com/dahliaOS/terminal) | Terminal emulator for dahliaOS |
 
 
 <!--AUTO-GENERATE-->
