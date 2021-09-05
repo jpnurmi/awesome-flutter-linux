@@ -12,3 +12,6 @@
 - name: Ubuntu Desktop Settings
   description: An unofficial Ubuntu Desktop Settings App made with Flutter.
   repo: Feichtmeier/settings
+- name: Ubuntu Software Store
+  description: An unofficial software store for Ubuntu Desktop made with Flutter.
+  repo: Feichtmeier/ubuntu-software-store
