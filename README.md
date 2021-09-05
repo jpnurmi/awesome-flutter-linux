@@ -36,6 +36,7 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 | Name | Repo | Description |
 | :--- | :--- | :---------- |
 | [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/ubuntu-desktop-installer?style=social)](https://github.com/canonical/ubuntu-desktop-installer) | A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI. |
+| [Ubuntu Desktop Settings](https://github.com/Feichtmeier/settings) | [![GitHub Repo stars](https://img.shields.io/github/stars/Feichtmeier/settings?style=social)](https://github.com/Feichtmeier/settings) | An unofficial Ubuntu Desktop Settings App made with Flutter. |
 | [flutter-pi](https://github.com/ardera/flutter-pi) | [![GitHub Repo stars](https://img.shields.io/github/stars/ardera/flutter-pi?style=social)](https://github.com/ardera/flutter-pi) | A light-weight Flutter Engine Embedder for Raspberry Pi. |
 
 
