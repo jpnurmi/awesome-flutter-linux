@@ -1,6 +1,8 @@
-# awesome-flutter-desktop
+# awesome-flutter-linux
 
-A curated list of awesome things related to Flutter desktop.
+A curated list of awesomeness for Flutter Linux.
+
+Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-flutter) for Flutter anything, and [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) for Flutter Desktop.
 
 ---
 
@@ -34,20 +36,6 @@ A curated list of awesome things related to Flutter desktop.
 
 <!--AUTO-GENERATE-->
 
-## Discussion
+## Thanks
 
-> Welcome to join the discussion group to share your suggestions and ideas with me.
-
-- WeChat Group 请添加我的微信 `lijy91`，并备注 `LeanFlutter`
-- [QQ Group](https://jq.qq.com/?_wv=1027&k=e3kwRnnw)
-- [Telegram Group](https://t.me/leanflutter)
-
-## Contribution
-
-Please make sure to read the [Contributing Guide](https://github.com/leanflutter/awesome-flutter-desktop/blob/main/.github/CONTRIBUTING.md) before making a pull request.
-
-## License
-
-[MIT](./LICENSE)
-
-Copyright (c) 2021 LiJianying <lijy91@foxmail.com>
+This project is based on [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) by @lijy91.
