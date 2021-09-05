@@ -1,3 +1,5 @@
+- name: adwaita_icons
+  repo: jesusrp98/adwaita_icons
 - name: appstream
   repo: canonical/appstream.dart
 - name: avahi
@@ -36,3 +38,5 @@
   repo: flutter/packages
 - name: yaru
   repo: ubuntu/yaru.dart
+- name: yaru_icons
+  repo: ubuntu/yaru_icons.dart
