@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'package:yaml/yaml.dart';
 
-Future<void> initConfig() async {
-  final String jsonString = File('config.yaml').readAsStringSync();
+Future<void> initConfig(String path) async {
+  final String jsonString = File(path).readAsStringSync();
   final YamlMap json = loadYaml(jsonString);
   Config.instance.parse(json);
 }

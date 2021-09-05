@@ -1,13 +1,39 @@
 import 'dart:io';
 
-import 'package:generator/includes.dart';
+import 'package:args/args.dart';
+import 'package:generator/generator.dart';
 
 const _kAutoGenMark = '<!--AUTO-GENERATE-->';
 
-void main(List<String> args) async {
-  await init();
+Future<void> main(List<String> args) async {
+  final parser = ArgParser();
+  parser.addOption(
+    'config',
+    abbr: 'c',
+    valueHelp: 'path',
+    defaultsTo: 'config.yaml',
+    help: 'Path to config.yaml.',
+  );
+  parser.addOption(
+    'input',
+    abbr: 'i',
+    valueHelp: 'path',
+    defaultsTo: Directory.current.path,
+    help: 'The input path that contains packages.yaml and projects.yaml.',
+  );
+  parser.addOption(
+    'output',
+    abbr: 'o',
+    valueHelp: 'path',
+    defaultsTo: 'README.md',
+    help: 'The output path',
+  );
+  final options = parser.parse(args);
 
-  File file = File('./README.md');
+  await initConfig(options['config']);
+  await initLocalDb(options['input']);
+
+  File file = File(options['output']);
   String content = file.readAsStringSync();
 
   List<Project> projectList = sharedLocalDb.projects!.list()!;

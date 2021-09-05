@@ -5,7 +5,7 @@ import 'package:pub_api_client/pub_api_client.dart';
 import 'package:yaml/yaml.dart';
 import 'package:github/github.dart';
 
-import '../../includes.dart';
+import '../../generator.dart';
 import 'modifiers/projects_modifier.dart';
 import 'modifiers/packages_modifier.dart';
 
@@ -44,7 +44,7 @@ class LocalDb {
   }
 
   Future<List<Project>> _readProjectList(String fileName) async {
-    File file = File('./source/$fileName');
+    File file = File(fileName);
     String content = file.readAsStringSync();
     var doc = loadYaml(content);
 
@@ -74,7 +74,7 @@ class LocalDb {
   }
 
   Future<List<Package>> _readPackageList(String fileName) async {
-    File file = File('./source/$fileName');
+    File file = File(fileName);
     String content = file.readAsStringSync();
     var doc = loadYaml(content);
 
@@ -104,7 +104,7 @@ class LocalDb {
     return packageList;
   }
 
-  Future<DbData?> read() async {
+  Future<DbData?> read(String path) async {
     this.dbData = defaultDbData;
 
     File _cacheFile = File('.cache.json');
@@ -116,8 +116,8 @@ class LocalDb {
     List<Project> projectList;
     List<Package> packageList;
 
-    projectList = await _readProjectList('projects.yaml');
-    packageList = await _readPackageList('packages.yaml');
+    projectList = await _readProjectList('$path/projects.yaml');
+    packageList = await _readPackageList('$path/packages.yaml');
 
     this.dbData!.projectList = []..addAll(projectList);
     this.dbData!.packageList = packageList;
@@ -196,6 +196,6 @@ LocalDb sharedLocalDb = LocalDb(
   ),
 );
 
-Future<void> initLocalDb() async {
-  await sharedLocalDb.read();
+Future<void> initLocalDb(String path) async {
+  await sharedLocalDb.read(path);
 }
