@@ -60,8 +60,11 @@ projects:
     repo: jwinarske/meta-flutter
   - name: Pangolin Desktop UI
     repo: dahliaOS/pangolin_desktop
-  - name: terminal
+  - name: dahliaOS terminal
     repo: dahliaOS/terminal
+  - name: dahliaOS files
+    repo: dahliaOS/files
+    description: File manager application for dahliaOS
   - name: Ubuntu Desktop Installer
     description: A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
     repo: canonical/ubuntu-desktop-installer
