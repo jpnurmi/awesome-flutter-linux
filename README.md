@@ -37,11 +37,13 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 
 | Name | Repo | Description |
 | :--- | :--- | :---------- |
+| [Pangolin Desktop UI](https://github.com/dahliaOS/pangolin_desktop) | [![GitHub Repo stars](https://img.shields.io/github/stars/dahliaOS/pangolin_desktop?style=social)](https://github.com/dahliaOS/pangolin_desktop) | Pangolin Desktop UI shell, designed for dahliaOS, written in Flutter. |
 | [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) | [![GitHub Repo stars](https://img.shields.io/github/stars/canonical/ubuntu-desktop-installer?style=social)](https://github.com/canonical/ubuntu-desktop-installer) | A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI. |
 | [Ubuntu Desktop Settings](https://github.com/Feichtmeier/settings) | [![GitHub Repo stars](https://img.shields.io/github/stars/Feichtmeier/settings?style=social)](https://github.com/Feichtmeier/settings) | An unofficial Ubuntu Desktop Settings App made with Flutter. |
 | [Ubuntu Software Store](https://github.com/Feichtmeier/ubuntu-software-store) | [![GitHub Repo stars](https://img.shields.io/github/stars/Feichtmeier/ubuntu-software-store?style=social)](https://github.com/Feichtmeier/ubuntu-software-store) | An unofficial software store for Ubuntu Desktop made with Flutter. |
 | [flutter-embedded-linux](https://github.com/sony/flutter-embedded-linux) | [![GitHub Repo stars](https://img.shields.io/github/stars/sony/flutter-embedded-linux?style=social)](https://github.com/sony/flutter-embedded-linux) | Embedded Linux Flutter embedder by Sony. |
 | [flutter-pi](https://github.com/ardera/flutter-pi) | [![GitHub Repo stars](https://img.shields.io/github/stars/ardera/flutter-pi?style=social)](https://github.com/ardera/flutter-pi) | A light-weight Flutter Engine Embedder for Raspberry Pi. |
+| [flutter_embedded](https://github.com/jwinarske/flutter_embedded) | [![GitHub Repo stars](https://img.shields.io/github/stars/jwinarske/flutter_embedded?style=social)](https://github.com/jwinarske/flutter_embedded) | Alternative Flutter shells for Embedded Linux. |
 | [meta-flutter](https://github.com/jwinarske/meta-flutter) | [![GitHub Repo stars](https://img.shields.io/github/stars/jwinarske/meta-flutter?style=social)](https://github.com/jwinarske/meta-flutter) | Yocto meta layer for recipes related to using Google Flutter Engine |
 
 

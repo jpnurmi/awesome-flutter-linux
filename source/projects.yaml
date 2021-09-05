@@ -1,3 +1,6 @@
+- name: flutter_embedded
+  description: Alternative Flutter shells for Embedded Linux.
+  repo: jwinarske/flutter_embedded
 - name: flutter-embedded-linux
   description: Embedded Linux Flutter embedder by Sony.
   repo: sony/flutter-embedded-linux
@@ -6,6 +9,8 @@
   repo: ardera/flutter-pi
 - name: meta-flutter
   repo: jwinarske/meta-flutter
+- name: Pangolin Desktop UI
+  repo: dahliaOS/pangolin_desktop
 - name: Ubuntu Desktop Installer
   description: A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
   repo: canonical/ubuntu-desktop-installer
