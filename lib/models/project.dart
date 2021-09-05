@@ -1,4 +1,4 @@
-class App {
+class Project {
   String name;
   String description;
   String repo;
@@ -14,17 +14,17 @@ class App {
     return '| $linkedName | $linkedBadgeStars | ${description} |';
   }
 
-  App({
+  Project({
     this.name,
     this.description,
     this.repo,
     this.url,
   });
 
-  factory App.fromJson(Map<String, dynamic> json) {
+  factory Project.fromJson(Map<String, dynamic> json) {
     if (json == null) return null;
 
-    return App(
+    return Project(
       name: json['name'],
       description: json['description'],
       repo: json['repo'],

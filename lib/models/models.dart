@@ -1,2 +1,2 @@
-export 'app.dart';
+export 'project.dart';
 export 'package.dart';

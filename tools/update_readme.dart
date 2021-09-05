@@ -10,10 +10,10 @@ void main(List<String> args) async {
   File file = File('./README.md');
   String content = file.readAsStringSync();
 
-  List<App> appList = sharedLocalDb.apps.list();
+  List<Project> projectList = sharedLocalDb.projects.list();
   List<Package> packageList = sharedLocalDb.packages.list();
 
-  appList.sort((a, b) => a.name.compareTo(b.name));
+  projectList.sort((a, b) => a.name.compareTo(b.name));
   packageList.sort((a, b) => a.name.compareTo(b.name));
 
   String md = '''
@@ -23,11 +23,11 @@ void main(List<String> args) async {
 | :--- | :--- | :--- |
 ${packageList.map((e) => e.md).join('\n')}
 
-## Open Source Apps
+## Projects
 
 | Name | Repo | Description |
 | :--- | :--- | :---------- |
-${appList.map((e) => e.md).join('\n')}
+${projectList.map((e) => e.md).join('\n')}
 
 ''';
 

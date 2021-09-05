@@ -6,10 +6,10 @@ import 'package:yaml/yaml.dart';
 import 'package:github/github.dart';
 
 import '../../includes.dart';
-import 'modifiers/apps_modifier.dart';
+import 'modifiers/projects_modifier.dart';
 import 'modifiers/packages_modifier.dart';
 
-export 'modifiers/apps_modifier.dart';
+export 'modifiers/projects_modifier.dart';
 export 'modifiers/packages_modifier.dart';
 
 class LocalDb {
@@ -26,7 +26,7 @@ class LocalDb {
   PubClient _pubClient;
   GitHub _githubClient;
 
-  AppsModifier _appsModifier;
+  ProjectsModifier _projectsModifier;
   PackagesModifier _packagesModifier;
 
   PubClient get pubClient {
@@ -43,33 +43,34 @@ class LocalDb {
     return _githubClient;
   }
 
-  Future<List<App>> _readAppList(String fileName) async {
+  Future<List<Project>> _readProjectList(String fileName) async {
     File file = File('./source/$fileName');
     String content = file.readAsStringSync();
     var doc = loadYaml(content);
 
     if (doc == null) return [];
 
-    List<App> appList = [];
+    List<Project> projectList = [];
     for (var item in doc) {
-      App app = App.fromJson(Map<String, dynamic>.from(item));
+      Project project = Project.fromJson(Map<String, dynamic>.from(item));
 
-      if (app.description == null) {
-        String cacheKey = 'github#${app.repo}';
+      if (project.description == null) {
+        String cacheKey = 'github#${project.repo}';
         Repository repository;
         if (_cacheMap.containsKey(cacheKey)) {
           repository = Repository.fromJson(_cacheMap[cacheKey]);
         } else {
           repository = await githubClient.repositories.getRepository(
-            RepositorySlug(app.repo.split('/')[0], app.repo.split('/')[1]),
+            RepositorySlug(
+                project.repo.split('/')[0], project.repo.split('/')[1]),
           );
           _cacheMap.putIfAbsent(cacheKey, () => repository.toJson());
         }
-        app.description = repository.description;
+        project.description = repository.description;
       }
-      appList.add(app);
+      projectList.add(project);
     }
-    return appList;
+    return projectList;
   }
 
   Future<List<Package>> _readPackageList(String fileName) async {
@@ -112,13 +113,13 @@ class LocalDb {
       _cacheMap = json.decode(cacheJsonString);
     }
 
-    List<App> openSourceAppList;
+    List<Project> projectList;
     List<Package> packageList;
 
-    openSourceAppList = await _readAppList('open-source-apps.yaml');
+    projectList = await _readProjectList('projects.yaml');
     packageList = await _readPackageList('packages.yaml');
 
-    this.dbData.appList = []..addAll(openSourceAppList);
+    this.dbData.projectList = []..addAll(projectList);
     this.dbData.packageList = packageList;
 
     final String cacheJsonString = prettyJsonString(_cacheMap);
@@ -127,16 +128,16 @@ class LocalDb {
     return this.dbData;
   }
 
-  AppsModifier get apps {
-    return app(null);
+  ProjectsModifier get projects {
+    return project(null);
   }
 
-  AppsModifier app(String name) {
-    if (_appsModifier == null) {
-      _appsModifier = AppsModifier(this.dbData);
+  ProjectsModifier project(String name) {
+    if (_projectsModifier == null) {
+      _projectsModifier = ProjectsModifier(this.dbData);
     }
-    _appsModifier.setName(name);
-    return _appsModifier;
+    _projectsModifier.setName(name);
+    return _projectsModifier;
   }
 
   PackagesModifier get packages {
@@ -153,23 +154,23 @@ class LocalDb {
 }
 
 class DbData {
-  List<App> appList;
+  List<Project> projectList;
   List<Package> packageList;
 
   DbData({
-    this.appList,
+    this.projectList,
     this.packageList,
   });
 
   factory DbData.fromJson(Map<String, dynamic> json) {
     if (json == null) return null;
 
-    List<App> appList = [];
+    List<Project> projectList = [];
     List<Package> packageList = [];
 
-    if (json['appList'] != null) {
-      Iterable l = json['appList'] as List;
-      appList = l.map((item) => App.fromJson(item)).toList();
+    if (json['projectList'] != null) {
+      Iterable l = json['projectList'] as List;
+      projectList = l.map((item) => Project.fromJson(item)).toList();
     }
     if (json['packageList'] != null) {
       Iterable l = json['packageList'] as List;
@@ -177,14 +178,14 @@ class DbData {
     }
 
     return DbData(
-      appList: appList,
+      projectList: projectList,
       packageList: packageList,
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'appList': (appList ?? []).map((e) => e.toJson()).toList(),
+      'projectList': (projectList ?? []).map((e) => e.toJson()).toList(),
       'packageList': (packageList ?? []).map((e) => e.toJson()).toList(),
     };
   }
@@ -192,7 +193,7 @@ class DbData {
 
 LocalDb sharedLocalDb = LocalDb(
   defaultDbData: DbData(
-    appList: [],
+    projectList: [],
     packageList: [],
   ),
 );
