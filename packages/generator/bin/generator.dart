@@ -39,8 +39,10 @@ Future<void> main(List<String> args) async {
   List<Project> projectList = sharedLocalDb.projects!.list()!;
   List<Package> packageList = sharedLocalDb.packages!.list()!;
 
-  projectList.sort((a, b) => a.name!.compareTo(b.name!));
-  packageList.sort((a, b) => a.name!.compareTo(b.name!));
+  projectList
+      .sort((a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()));
+  packageList
+      .sort((a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()));
 
   String md = '''
 ## Packages
