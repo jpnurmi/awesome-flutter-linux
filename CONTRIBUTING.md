@@ -1,30 +1,30 @@
-# Contributing Guide
+# Contribution Guidelines
 
-Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
+Add new entries to `awesome.yaml`.
 
-## Pull Request Guidelines
+## Packages
 
-- Work in the `./source` folder and DO NOT checkin `README.md` in the commits.
+Linux-specific packages published on [pub.dev](https://pub.dev).
 
-> **DO NOT UPDATE README.md**
-> **DO NOT UPDATE README.md**
-> **DO NOT UPDATE README.md**
+- `name`: pretty display name
+- `pub`: package name on pub.dev
+- `repo`: repository on GitHub
+- `description`: optional description (defaults to pub.dev description)
 
-### Add open source app
+## Projects
 
-Add content below the `./source/open-source-apps.yaml` file.
+Linux-specific Flutter projects.
 
-```yaml
-- name: Biyi
-  repo: biyidev/biyi_app
-  url: https://biyidev.com/
-```
+- `name`: pretty display name
+- `repo`: repository on GitHub
+- `description`: optional description (defaults to repo description)
 
-### Add package
+## README.md
 
-Add content below the `./source/packages.yaml` file.
+Copy `config.src.yaml` as `config.yaml` and fill up the [personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+Once the token has been specified, `README.md` can be generated with help of [melos](https://melos.invertase.dev/):
 
-```yaml
-- name: window_manager
-  repo: leanflutter/window_manager
+```bash
+$ dart pub global activate melos
+$ melos run generate
 ```
