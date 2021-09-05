@@ -1,3 +1,6 @@
+- name: flutter-pi
+  description: A light-weight Flutter Engine Embedder for Raspberry Pi.
+  repo: ardera/flutter-pi
 - name: Ubuntu Desktop Installer
   description: A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
   repo: canonical/ubuntu-desktop-installer
