@@ -9,9 +9,7 @@ class Project {
 
   String get md {
     String linkedName = '[${name}](${url ?? githubUrl})';
-    String linkedBadgeStars =
-        '[![GitHub Repo stars]($githubBadgeStars)]($githubUrl)';
-    return '| $linkedName | $linkedBadgeStars | ${description} |';
+    return '- $linkedName - ${description!.replaceAll('\n', ' ')}';
   }
 
   Project({

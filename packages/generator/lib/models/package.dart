@@ -8,10 +8,8 @@ class Package {
       'https://img.shields.io/github/stars/${repo}?style=social';
 
   String get md {
-    String linkedName = '[${name}](${url})';
-    String linkedBadgeStars =
-        '[![GitHub Repo stars]($githubBadgeStars)]($githubUrl)';
-    return '| $linkedName | $linkedBadgeStars | ${description!.replaceAll('\n', ' ')} |';
+    String linkedName = '[$name]($url)';
+    return '- $linkedName - ${description!.replaceAll('\n', ' ')}';
   }
 
   Package({

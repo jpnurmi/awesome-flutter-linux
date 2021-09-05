@@ -47,14 +47,10 @@ Future<void> main(List<String> args) async {
   String md = '''
 ## Packages
 
-| Name | Repo | Description |
-| :--- | :--- | :--- |
 ${packageList.map((e) => e.md).join('\n')}
 
 ## Projects
 
-| Name | Repo | Description |
-| :--- | :--- | :---------- |
 ${projectList.map((e) => e.md).join('\n')}
 
 ''';
