@@ -41,10 +41,10 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 - [AppImagePool](https://github.com/prateekmedia/appimagepool) - A simple, modern AppImageHub Client, powered by flutter.
 - [dahliaOS files](https://github.com/dahliaOS/files) - File manager application for dahliaOS
 - [dahliaOS terminal](https://github.com/dahliaOS/terminal) - Terminal emulator for dahliaOS
+- [Flutter Embedded](https://github.com/jwinarske/flutter_embedded) - Alternative Flutter shells for Embedded Linux.
 - [Flutter Embedded Linux](https://github.com/sony/flutter-embedded-linux) - Embedded Linux Flutter embedder by Sony.
 - [Flutter Pi](https://github.com/ardera/flutter-pi) - A light-weight Flutter Engine Embedder for Raspberry Pi.
 - [Flutter Snap](https://snapcraft.io/flutter) - The easiest way to install Flutter on Linux is by using snapd.
-- [flutter_embedded](https://github.com/jwinarske/flutter_embedded) - Alternative Flutter shells for Embedded Linux.
 - [meta-flutter](https://github.com/jwinarske/meta-flutter) - Yocto meta layer for recipes related to using Google Flutter Engine
 - [Pangolin Desktop UI](https://github.com/dahliaOS/pangolin_desktop) - Pangolin Desktop UI shell, designed for dahliaOS, written in Flutter.
 - [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) - A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
