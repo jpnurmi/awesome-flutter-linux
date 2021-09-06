@@ -69,7 +69,7 @@ packages:
 projects:
   - name: AppImagePool
     repo: prateekmedia/appimagepool
-  - name: flutter_embedded
+  - name: Flutter Embedded
     description: Alternative Flutter shells for Embedded Linux.
     repo: jwinarske/flutter_embedded
   - name: Flutter Embedded Linux
