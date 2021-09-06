@@ -12,4 +12,4 @@ Dart_Packages.xml
 .idea/
 .dart_tool/
 .cache.json
-config.yaml
+*.iml
