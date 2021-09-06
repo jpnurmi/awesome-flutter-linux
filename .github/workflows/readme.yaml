@@ -1,0 +1,23 @@
+name: readme
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub global activate melos
+      - run: melos bootstrap
+      - run: melos run generate
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - uses: actions-js/push@master
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          author_email: 'awesome-flutter-linux@users.noreply.github.com'
+          author_name: 'Awesome Flutter Linux'
+          message: 'Update README.md'
