@@ -78,6 +78,9 @@ projects:
   - name: Flutter Pi
     description: A light-weight Flutter Engine Embedder for Raspberry Pi.
     repo: ardera/flutter-pi
+  - name: Flutter Snap
+    description: The easiest way to install Flutter on Linux is by using snapd.
+    url: https://snapcraft.io/flutter
   - name: meta-flutter
     repo: jwinarske/meta-flutter
   - name: Pangolin Desktop UI
