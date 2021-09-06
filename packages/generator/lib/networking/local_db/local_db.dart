@@ -17,9 +17,11 @@ class LocalDb {
 
   LocalDb({
     this.defaultDbData,
+    required this.githubToken,
   });
 
   DbData? dbData;
+  String githubToken;
 
   Map<String, dynamic>? _cacheMap = {};
 
@@ -37,7 +39,7 @@ class LocalDb {
   GitHub? get githubClient {
     if (_githubClient == null) {
       _githubClient = GitHub(
-        auth: Authentication.withToken(sharedConfig.githubToken),
+        auth: Authentication.withToken(githubToken),
       );
     }
     return _githubClient;
@@ -183,13 +185,14 @@ class DbData {
   }
 }
 
-LocalDb sharedLocalDb = LocalDb(
-  defaultDbData: DbData(
-    projectList: [],
-    packageList: [],
-  ),
-);
-
-Future<void> initLocalDb(String path) async {
-  await sharedLocalDb.read(path);
+Future<LocalDb> initLocalDb(String path, String githubToken) async {
+  final localDb = LocalDb(
+    defaultDbData: DbData(
+      projectList: [],
+      packageList: [],
+    ),
+    githubToken: githubToken,
+  );
+  await localDb.read(path);
+  return localDb;
 }

@@ -8,11 +8,11 @@ const _kAutoGenMark = '<!--AUTO-GENERATE-->';
 Future<void> main(List<String> args) async {
   final parser = ArgParser();
   parser.addOption(
-    'config',
-    abbr: 'c',
-    valueHelp: 'path',
-    defaultsTo: 'config.yaml',
-    help: 'Path to config.yaml.',
+    'token',
+    abbr: 't',
+    valueHelp: 'token',
+    defaultsTo: Platform.environment['GITHUB_TOKEN'],
+    help: 'GitHub token (defaults to the GITHUB_TOKEN environment variable)',
   );
   parser.addOption(
     'input',
@@ -30,14 +30,20 @@ Future<void> main(List<String> args) async {
   );
   final options = parser.parse(args);
 
-  await initConfig(options['config']);
-  await initLocalDb(options['input']);
+  final token = options['token'] as String?;
+  if (token == null || token.isEmpty) {
+    print(
+        'You must provide a GitHub token either using the --token command-line argument or GITHUB_TOKEN environment variable.');
+    exit(1);
+  }
+
+  final localDb = await initLocalDb(options['input'], token);
 
   File file = File(options['output']);
   String content = file.readAsStringSync();
 
-  List<Project> projectList = sharedLocalDb.projects!.list()!;
-  List<Package> packageList = sharedLocalDb.packages!.list()!;
+  List<Project> projectList = localDb.projects!.list()!;
+  List<Package> packageList = localDb.packages!.list()!;
 
   projectList
       .sort((a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()));
