@@ -35,6 +35,9 @@ packages:
   - name: LXD
     pub: lxd
     repo: canonical/lxd.dart
+  - name: Intel MRAA Linux library
+    pub: mraa
+    repo: https://github.com/shamblett/mraa
   - name: Network Manager
     pub: nm
     repo: canonical/nm.dart
