@@ -1,9 +1,9 @@
 # Contribution Guidelines
 
-| **NOTE:** Only Linux-specific entries are accepted into `awesome-flutter-linux`.<br/>Everything else should be contributed to [`awesome-flutter`](https://github.com/Solido/awesome-flutter) or [`awesome-flutter-desktop`](https://github.com/leanflutter/awesome-flutter-desktop). |
-|---|
+Only Linux-specific entries are accepted into `awesome-flutter-linux`.<br/>Everything else should be contributed to [`awesome-flutter`](https://github.com/Solido/awesome-flutter) or [`awesome-flutter-desktop`](https://github.com/leanflutter/awesome-flutter-desktop).
 
-Do not edit `README.md`. Add new entries to `awesome.yaml`.
+| **NOTE:** Do not edit `README.md`. Add new entries to `awesome.yaml`. |
+|---|
 
 ## Packages
 
