@@ -1,6 +1,9 @@
 # Contribution Guidelines
 
-Add new entries to `awesome.yaml`.
+| **NOTE:** Only Linux-specific entries are accepted into `awesome-flutter-linux`.<br/>Everything else should be contributed to [`awesome-flutter`](https://github.com/Solido/awesome-flutter) or [`awesome-flutter-desktop`](https://github.com/leanflutter/awesome-flutter-desktop). |
+|---|
+
+Do not edit `README.md`. Add new entries to `awesome.yaml`.
 
 ## Packages
 
@@ -17,17 +20,13 @@ Linux-specific Flutter projects.
 
 - `name`: pretty display name
 - `repo`: repository on GitHub
+- `url`: a URL to the project website
 - `description`: optional description (defaults to repo description)
 
 ## README.md
 
-Export `GITHUB_TOKEN`
+Steps to generate `README.md` for local preview:
 
-[Create a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) and export it as the `GITHUB_TOKEN` environment variable.
-
-Once the token has been specified, `README.md` can be generated with help of [melos](https://melos.invertase.dev/):
-
-```bash
-$ dart pub global activate melos
-$ GITHUB_TOKEN=<token> melos run generate
-```
+- [Create a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) on GitHub
+- Install [melos](https://melos.invertase.dev/): `dart pub global activate melos`
+- Run the generator: `GITHUB_TOKEN=<token> melos run generate`
