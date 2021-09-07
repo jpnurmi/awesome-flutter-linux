@@ -21,6 +21,7 @@ A curated list of awesomeness for [Flutter](https://flutter.dev) Linux.
 - [GPIO](https://pub.dev/packages/flutter_gpiod) - Dart package for accessing GPIO using the GPIO character device interface on linux / Android (root required). Supports signal edge listening, active state, open source/drain and (if supported by platform) bias.
 - [GSettings](https://pub.dev/packages/gsettings) - GSettings client
 - [GTK](https://pub.dev/packages/gtk) - Implements GTK Widgets, themes and titlebar buttons in Flutter. Based on the GNOME HIG
+- [Intel MRAA Linux library](https://pub.dev/packages/mraa) - A Dart FFI wrapper implementation of the Intel linux MRAA device library
 - [Linux System Info](https://pub.dev/packages/linux_system_info) - Dart library for getting general linux system information like amount of ram or swap, cpu's MHz, cpu usage and kernel/distribution related data
 - [LXD](https://pub.dev/packages/lxd) - Provides a client to access lxd, which allows you to manage containers on a Linux system.
 - [Network Manager](https://pub.dev/packages/nm) - Provides a client to connect to NetworkManager - the service that manages network connections on Linux.
