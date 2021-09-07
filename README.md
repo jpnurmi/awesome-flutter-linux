@@ -6,8 +6,6 @@
 
 A curated list of awesomeness for [Flutter](https://flutter.dev) Linux.
 
-Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-flutter) for Flutter anything, and [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) for Flutter Desktop.
-
 <!-- DO NOT EDIT. ADD NEW ENTRIES TO awesome.yaml INSTEAD. -->
 
 <!--AUTO-GENERATE-->
@@ -53,6 +51,12 @@ Make sure to check out also [awesome-flutter](https://github.com/Solido/awesome-
 
 
 <!--AUTO-GENERATE-->
+
+## More
+
+- [awesome](https://github.com/sindresorhus/awesome) - Awesome lists about all kinds of interesting topics.
+- [awesome-flutter](https://github.com/Solido/awesome-flutter) - An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
+- [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) - A curated list of awesome things related to Flutter desktop.
 
 ## Credits
 
