@@ -1,9 +1,0 @@
-name: awesome_flutter_linux
-packages:
-  - packages/**
-scripts:
-  generate: >
-    melos exec --scope "generator" -- \
-      dart run bin/generator.dart \
-      --input MELOS_ROOT_PATH/awesome.yaml \
-      --output MELOS_ROOT_PATH/README.md

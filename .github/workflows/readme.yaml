@@ -10,9 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1
-      - run: dart pub global activate melos
-      - run: melos bootstrap
-      - run: melos run generate
+      - run: dart pub global activate --source git https://github.com/jpnurmi/awesome_generator.dart
+      - run: awesome-generator awesome.yaml
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - uses: actions-js/push@master
