@@ -6,9 +6,11 @@
 
 A curated list of awesomeness for [Flutter](https://flutter.dev) Linux.
 
-<!-- DO NOT EDIT. ADD NEW ENTRIES TO awesome.yaml INSTEAD. -->
+<!-- NOTE: NEW ENTRIES ARE ADDED TO `awesome.yaml`. -->
+<!-- `README.md` IS AUTO-GENERATED - DO NOT MODIFY OR COMMIT. -->
+<!-- SEE `CONTRIBUTING.md` FOR MORE INSTRUCTIONS. -->
 
-<!--AUTO-GENERATE-->
+
 ## Packages
 
 - [Adwaita Icons](https://pub.dev/packages/adwaita_icons) - Package that contains all icons built for the Adwaita Theme.
@@ -51,8 +53,6 @@ A curated list of awesomeness for [Flutter](https://flutter.dev) Linux.
 - [Ubuntu Software Store](https://github.com/Feichtmeier/ubuntu-software-store) - An unofficial software store for Ubuntu Desktop made with Flutter.
 
 
-<!--AUTO-GENERATE-->
-
 ## More
 
 - [awesome](https://github.com/sindresorhus/awesome) - Awesome lists about all kinds of interesting topics.
@@ -61,4 +61,5 @@ A curated list of awesomeness for [Flutter](https://flutter.dev) Linux.
 
 ## Credits
 
-This project is based on [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) by [@leanflutter](https://github.com/leanflutter).
+This project is derived from [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop)
+and powered by [awesome-generator](https://github.com/jpnurmi/awesome_generator.dart).
