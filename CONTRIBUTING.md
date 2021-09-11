@@ -28,9 +28,7 @@ Linux-specific Flutter projects.
 Steps to generate `README.md` for local preview:
 
 - [Create a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) on GitHub
-- Install [melos](https://melos.invertase.dev/):
-  `dart pub global activate melos`
 - Install [awesome-generator](https://melos.invertase.dev/):
-  `dart pub global activate --source git https://github.com/jpnurmi/awesome_generator.dart`
+  `dart pub global activate --source git https://github.com/jpnurmi/awesome-generator`
 
 - Run the generator: `awesome-generator --token=<token> awesome.yaml`
