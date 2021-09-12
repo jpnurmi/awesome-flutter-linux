@@ -52,12 +52,12 @@ A curated list of awesomeness for [Flutter](https://flutter.dev) Linux.
 - [Ubuntu Desktop Settings](https://github.com/Feichtmeier/settings) - An unofficial Ubuntu Desktop Settings App made with Flutter.
 - [Ubuntu Software Store](https://github.com/Feichtmeier/ubuntu-software-store) - An unofficial software store for Ubuntu Desktop made with Flutter.
 
-
 ## More
 
-- [awesome](https://github.com/sindresorhus/awesome) - Awesome lists about all kinds of interesting topics.
+- [awesome](https://github.com/sindresorhus/awesome) - 😎 Awesome lists about all kinds of interesting topics
 - [awesome-flutter](https://github.com/Solido/awesome-flutter) - An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
 - [awesome-flutter-desktop](https://github.com/leanflutter/awesome-flutter-desktop) - A curated list of awesome things related to Flutter desktop.
+
 
 ## Credits
 
