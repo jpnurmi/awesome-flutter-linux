@@ -102,6 +102,12 @@ projects:
   - name: Ubuntu Software Store
     description: An unofficial software store for Ubuntu Desktop made with Flutter.
     github: Feichtmeier/ubuntu-software-store
+  - name: LINUXMON
+    github: therexone/linux-mon
+  - name: Linux Stats App
+    github: Malte2036/flutter_linuxstats
+  - name: Building a Yaru app with Flutter
+    github: ubuntu/user_manager
 
 more:
   - name: awesome
