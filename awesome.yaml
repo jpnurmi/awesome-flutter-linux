@@ -102,3 +102,11 @@ projects:
   - name: Ubuntu Software Store
     description: An unofficial software store for Ubuntu Desktop made with Flutter.
     github: Feichtmeier/ubuntu-software-store
+
+more:
+  - name: awesome
+    github: sindresorhus/awesome
+  - name: awesome-flutter
+    github: Solido/awesome-flutter
+  - name: awesome-flutter-desktop
+    github: leanflutter/awesome-flutter-desktop
