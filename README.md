@@ -24,6 +24,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [BlueZ](https://pub.dev/packages/bluez) - Provides a client to connect to BlueZ - the Linux Bluetooth stack.
 - [D-Bus](https://pub.dev/packages/dbus) - A native Dart implementation of the D-Bus message bus client. This package allows Dart applications to directly access services on the Linux desktop.
 - [Desktop Notifications](https://pub.dev/packages/desktop_notifications) - Allows notifications to be sent on Linux desktops using the desktop notifications specification.
+- [Flutter GTK](https://pub.dev/packages/flutter_gtk) - Implementation of GTK & Adwaita widgets in Flutter.
 - [fwupd](https://pub.dev/packages/fwupd) - Provides a client to connect to fwupd - the service that does firmware updates on Linux.
 - [GPIO](https://pub.dev/packages/flutter_gpiod) - Dart package for accessing GPIO using the GPIO character device interface on linux / Android (root required). Supports signal edge listening, active state, open source/drain and (if supported by platform) bias.
 - [GSettings](https://pub.dev/packages/gsettings) - GSettings client
