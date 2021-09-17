@@ -111,6 +111,8 @@ projects:
     github: Malte2036/flutter_linuxstats
   - name: Building a Yaru app with Flutter
     github: ubuntu/user_manager
+  - name: Toyota IVI homescreen
+    github: toyota-connected/ivi-homescreen
 
 more:
   - name: awesome
