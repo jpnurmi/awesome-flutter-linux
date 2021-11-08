@@ -57,6 +57,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [LINUXMON](https://github.com/therexone/linux-mon) - An app to monitor linux PC stats directly from your phone.
 - [meta-flutter](https://github.com/jwinarske/meta-flutter) - Yocto meta layer for recipes related to using Google Flutter Engine
 - [Pangolin Desktop UI](https://github.com/dahliaOS/pangolin_desktop) - Pangolin Desktop UI shell, designed for dahliaOS, written in Flutter.
+- [Quickgui](https://github.com/quickgui/quickgui) - A Flutter frontend for quickget and quickemu.
 - [Toyota IVI homescreen](https://github.com/toyota-connected/ivi-homescreen) - Embedded Flutter runtime targeting Embedded Linux with Wayland
 - [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) - A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
 - [Ubuntu Desktop Settings](https://github.com/Feichtmeier/settings) - An unofficial Ubuntu Desktop Settings App made with Flutter.
