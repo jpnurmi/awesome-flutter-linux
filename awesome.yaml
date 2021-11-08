@@ -113,6 +113,9 @@ projects:
     github: ubuntu/user_manager
   - name: Toyota IVI homescreen
     github: toyota-connected/ivi-homescreen
+  - name: Quickgui
+    description: A Flutter frontend for quickget and quickemu.
+    github: quickgui/quickgui
 
 more:
   - name: awesome
