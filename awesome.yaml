@@ -32,9 +32,6 @@ packages:
   - name: GSettings
     pub: gsettings
     github: canonical/gsettings.dart
-  - name: GTK
-    pub: gtk
-    github: prateekmedia/gtk-flutter
   - name: libadwaita
     pub: libadwaita
     github: gtk-flutter/libadwaita
