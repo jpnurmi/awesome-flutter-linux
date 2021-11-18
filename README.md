@@ -29,7 +29,6 @@ See CONTRIBUTING.md for more details and instructions.
 - [fwupd](https://pub.dev/packages/fwupd) - Provides a client to connect to fwupd - the service that does firmware updates on Linux.
 - [GPIO](https://pub.dev/packages/flutter_gpiod) - Dart package for accessing GPIO using the GPIO character device interface on linux / Android (root required). Supports signal edge listening, active state, open source/drain and (if supported by platform) bias.
 - [GSettings](https://pub.dev/packages/gsettings) - GSettings client
-- [GTK](https://pub.dev/packages/gtk) - MOVED TO https://pub.dev/packages/libadwaita
 - [libadwaita](https://pub.dev/packages/libadwaita) - Unofficial implementation of Libadwaita Widgets in Flutter.
 - [Linux System Info](https://pub.dev/packages/linux_system_info) - Dart library for getting general linux system information like amount of ram or swap, cpu's MHz, cpu usage and kernel/distribution related data
 - [LXD](https://pub.dev/packages/lxd) - Provides a client to access lxd, which allows you to manage containers on a Linux system.
