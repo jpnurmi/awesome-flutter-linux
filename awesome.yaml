@@ -1,4 +1,7 @@
 packages:
+  - name: Adwaita Theme
+    pub: adwaita
+    github: gtk-flutter/adwaita
   - name: Adwaita Icons
     pub: adwaita_icons
     github: jesusrp98/adwaita_icons
@@ -32,6 +35,9 @@ packages:
   - name: GTK
     pub: gtk
     github: prateekmedia/gtk-flutter
+  - name: libadwaita
+    pub: libadwaita
+    github: gtk-flutter/libadwaita
   - name: Linux System Info
     pub: linux_system_info
     github: LolzDEV/linux_system_info
@@ -59,18 +65,21 @@ packages:
   - name: UPower
     pub: upower
     github: canonical/upower.dart
+  - name: Window Decorations
+    pub: window_decorations
+    github: gtk-flutter/window_decorations
   - name: XDG directories
     pub: xdg_directories
     github: flutter/packages
+  - name: xterm
+    pub: xterm
+    github: TerminalStudio/xterm.dart
   - name: Yaru Style
     pub: yaru
     github: ubuntu/yaru.dart
   - name: Yaru Icons
     pub: yaru_icons
     github: ubuntu/yaru_icons.dart
-  - name: xterm
-    pub: xterm
-    github: TerminalStudio/xterm.dart
 
 projects:
   - name: AppImagePool
