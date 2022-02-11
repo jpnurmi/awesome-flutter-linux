@@ -8,6 +8,9 @@ packages:
   - name: Appstream
     pub: appstream
     github: canonical/appstream.dart
+  - name: Arna
+    pub: arna
+    github: MahanRahmati/Arna
   - name: Avahi
     pub: avahi
     github: canonical/avahi.dart
