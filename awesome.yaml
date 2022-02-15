@@ -108,9 +108,6 @@ projects:
   - name: Ubuntu Desktop Settings
     description: An unofficial Ubuntu Desktop Settings App made with Flutter.
     github: Feichtmeier/settings
-  - name: Ubuntu Software Store
-    description: An unofficial software store for Ubuntu Desktop made with Flutter.
-    github: Feichtmeier/ubuntu-software-store
   - name: LINUXMON
     github: therexone/linux-mon
   - name: Linux Stats App
