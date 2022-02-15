@@ -19,7 +19,7 @@ See CONTRIBUTING.md for more details and instructions.
 ## Packages
 
 - [Adwaita Icons](https://pub.dev/packages/adwaita_icons) - Package that contains all icons built for the Adwaita Theme.
-- [Adwaita Theme](https://pub.dev/packages/adwaita) - Implementation of libadwaita for flutter/dart.
+- [Adwaita Theme](https://pub.dev/packages/adwaita) - Adwaita style - The default theme for GTK+ for your Flutter app.
 - [Appstream](https://pub.dev/packages/appstream) - A parser for Appstream data. This package allows Dart applications to access package metadata on Linux systems.
 - [Avahi](https://pub.dev/packages/avahi) - Provides a client to connect to Avahi - the service that implements mDNS/DNS-SD on Linux.
 - [BlueZ](https://pub.dev/packages/bluez) - Provides a client to connect to BlueZ - the Linux Bluetooth stack.
@@ -28,8 +28,8 @@ See CONTRIBUTING.md for more details and instructions.
 - [Flutter GTK](https://pub.dev/packages/flutter_gtk) - Implementation of GTK & Adwaita widgets in Flutter.
 - [fwupd](https://pub.dev/packages/fwupd) - Provides a client to connect to fwupd - the service that does firmware updates on Linux.
 - [GPIO](https://pub.dev/packages/flutter_gpiod) - Dart package for accessing GPIO using the GPIO character device interface on linux / Android (root required). Supports signal edge listening, active state, open source/drain and (if supported by platform) bias.
-- [GSettings](https://pub.dev/packages/gsettings) - GSettings client
-- [libadwaita](https://pub.dev/packages/libadwaita) - Unofficial implementation of Libadwaita Widgets in Flutter.
+- [GSettings](https://pub.dev/packages/gsettings) - Provides a client to access GSettings - a settings database used for storing user preferences on Linux.
+- [libadwaita](https://pub.dev/packages/libadwaita) - Libadwaita's widgets for Flutter. Following Gnome HIG and available on all platforms.
 - [Linux System Info](https://pub.dev/packages/linux_system_info) - Dart library for getting general linux system information like amount of ram or swap, cpu's MHz, cpu usage and kernel/distribution related data
 - [LXD](https://pub.dev/packages/lxd) - Provides a client to access lxd, which allows you to manage containers on a Linux system.
 - [MRAA](https://pub.dev/packages/mraa) - A Dart FFI wrapper implementation of the Intel linux MRAA device library
@@ -51,7 +51,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [Building a Yaru app with Flutter](https://github.com/ubuntu/user_manager) - A tutorial for creating an Ubuntu Linux Flutter app, using the yaru theme
 - [dahliaOS files](https://github.com/dahliaOS/files) - File manager application for dahliaOS
 - [dahliaOS terminal](https://github.com/dahliaOS/terminal) - Terminal emulator for dahliaOS
-- [Flutter Embedded](https://github.com/jwinarske/flutter_embedded) - Alternative Flutter shells for Embedded Linux.
+- [Flutter Embedded](https://github.com/meta-flutter/flutter_embedded) - Alternative Flutter shells for Embedded Linux.
 - [Flutter Embedded Linux](https://github.com/sony/flutter-embedded-linux) - Embedded Linux Flutter embedder by Sony.
 - [Flutter Pi](https://github.com/ardera/flutter-pi) - A light-weight Flutter Engine Embedder for Raspberry Pi.
 - [Flutter Snap](https://snapcraft.io/flutter) - The easiest way to install Flutter on Linux is by using snapd.
@@ -59,11 +59,10 @@ See CONTRIBUTING.md for more details and instructions.
 - [LINUXMON](https://github.com/therexone/linux-mon) - An app to monitor linux PC stats directly from your phone.
 - [meta-flutter](https://github.com/jwinarske/meta-flutter) - Yocto meta layer for recipes related to using Google Flutter Engine
 - [Pangolin Desktop UI](https://github.com/dahliaOS/pangolin_desktop) - Pangolin Desktop UI shell, designed for dahliaOS, written in Flutter.
-- [Quickgui](https://github.com/quickgui/quickgui) - A Flutter frontend for quickget and quickemu.
+- [Quickgui](https://github.com/quickemu-project/quickgui) - A Flutter frontend for quickget and quickemu.
 - [Toyota IVI homescreen](https://github.com/toyota-connected/ivi-homescreen) - Embedded Flutter runtime targeting Embedded Linux with Wayland
 - [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) - A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
 - [Ubuntu Desktop Settings](https://github.com/Feichtmeier/settings) - An unofficial Ubuntu Desktop Settings App made with Flutter.
-- [Ubuntu Software Store](https://github.com/Feichtmeier/ubuntu-software-store) - An unofficial software store for Ubuntu Desktop made with Flutter.
 
 ## More
 
