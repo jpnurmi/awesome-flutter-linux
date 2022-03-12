@@ -39,7 +39,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [snapd](https://pub.dev/packages/snapd) - Provides a client to access snapd, which allows you to manage, search and install snaps on a Linux system.
 - [UDisks](https://pub.dev/packages/udisks) - Provides a client to connect to UDisks - the service that accesses and manipulates disks, storage devices and technologies on Linux.
 - [UPower](https://pub.dev/packages/upower) - Provides a client to connect to UPower - the service that does power management on Linux.
-- [Window Decorations](https://pub.dev/packages/window_decorations) - A package which provides most of the window decorations from linux themes.
+- [Window Decorations](https://pub.dev/packages/window_decorations) - Deprecated, use https://pub.dev/packages/titlebar_buttons
 - [XDG directories](https://pub.dev/packages/xdg_directories) - A Dart package for reading XDG directory configuration information on Linux.
 - [xterm](https://pub.dev/packages/xterm) - xterm.dart is a fast and fully-featured terminal emulator for Flutter applications, with support for mobile and desktop platforms.
 - [Yaru Icons](https://pub.dev/packages/yaru_icons) - Ubuntu Yaru Icon theme
@@ -55,6 +55,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [Flutter Embedded Linux](https://github.com/sony/flutter-embedded-linux) - Embedded Linux Flutter embedder by Sony.
 - [Flutter Pi](https://github.com/ardera/flutter-pi) - A light-weight Flutter Engine Embedder for Raspberry Pi.
 - [Flutter Snap](https://snapcraft.io/flutter) - The easiest way to install Flutter on Linux is by using snapd.
+- [flutter_wlroots](https://github.com/PlayPulseCom/flutter_wlroots) - Wayland compositor library for Flutter. Built with Wlroots.
 - [Linux Stats App](https://github.com/Malte2036/flutter_linuxstats) - A flutter application to monitor your Linux PC statistic.
 - [LINUXMON](https://github.com/therexone/linux-mon) - An app to monitor linux PC stats directly from your phone.
 - [meta-flutter](https://github.com/jwinarske/meta-flutter) - Yocto meta layer for recipes related to using Google Flutter Engine
