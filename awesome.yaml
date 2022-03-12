@@ -93,6 +93,8 @@ projects:
   - name: Flutter Snap
     description: The easiest way to install Flutter on Linux is by using snapd.
     url: https://snapcraft.io/flutter
+  - name: flutter_wlroots
+    github: PlayPulseCom/flutter_wlroots
   - name: meta-flutter
     github: jwinarske/meta-flutter
   - name: Pangolin Desktop UI
