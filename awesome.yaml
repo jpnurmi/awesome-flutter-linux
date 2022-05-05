@@ -29,6 +29,9 @@ packages:
   - name: fwupd
     pub: fwupd
     github: canonical/fwupd.dart
+  - name: GeoClue
+    pub: geoclue
+    github: canonical/geoclue.dart
   - name: GSettings
     pub: gsettings
     github: canonical/gsettings.dart
