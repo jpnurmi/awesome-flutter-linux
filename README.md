@@ -27,6 +27,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [Desktop Notifications](https://pub.dev/packages/desktop_notifications) - Allows notifications to be sent on Linux desktops using the desktop notifications specification.
 - [Flutter GTK](https://pub.dev/packages/flutter_gtk) - Implementation of GTK & Adwaita widgets in Flutter.
 - [fwupd](https://pub.dev/packages/fwupd) - Provides a client to connect to fwupd - the service that does firmware updates on Linux.
+- [GeoClue](https://pub.dev/packages/geoclue) - GeoClue: The Geolocation Service
 - [GPIO](https://pub.dev/packages/flutter_gpiod) - Dart package for accessing GPIO using the GPIO character device interface on linux / Android (root required). Supports signal edge listening, active state, open source/drain and (if supported by platform) bias.
 - [GSettings](https://pub.dev/packages/gsettings) - Provides a client to access GSettings - a settings database used for storing user preferences on Linux.
 - [libadwaita](https://pub.dev/packages/libadwaita) - Libadwaita's widgets for Flutter. Following Gnome HIG and available on all platforms.
@@ -63,7 +64,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [Quickgui](https://github.com/quickemu-project/quickgui) - A Flutter frontend for quickget and quickemu.
 - [Toyota IVI homescreen](https://github.com/toyota-connected/ivi-homescreen) - Embedded Flutter runtime targeting Embedded Linux with Wayland
 - [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) - A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
-- [Ubuntu Desktop Settings](https://github.com/Feichtmeier/settings) - An unofficial Ubuntu Desktop Settings App made with Flutter.
+- [Ubuntu Desktop Settings](https://github.com/ubuntu-flutter-community/settings) - An unofficial Ubuntu Desktop Settings App made with Flutter.
 
 ## More
 
