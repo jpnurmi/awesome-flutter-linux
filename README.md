@@ -43,8 +43,9 @@ See CONTRIBUTING.md for more details and instructions.
 - [Window Decorations](https://pub.dev/packages/window_decorations) - Deprecated, use https://pub.dev/packages/titlebar_buttons
 - [XDG directories](https://pub.dev/packages/xdg_directories) - A Dart package for reading XDG directory configuration information on Linux.
 - [xterm](https://pub.dev/packages/xterm) - xterm.dart is a fast and fully-featured terminal emulator for Flutter applications, with support for mobile and desktop platforms.
+- [Yaru Colors](https://pub.dev/packages/yaru_colors) - A collection of Yaru color palettes for Flutter.
 - [Yaru Icons](https://pub.dev/packages/yaru_icons) - Ubuntu Yaru Icon theme
-- [Yaru Style](https://pub.dev/packages/yaru) - Ubuntu Yaru Style - Distinct look and feel of the Ubuntu Desktop
+- [Yaru Theme](https://pub.dev/packages/yaru) - Ubuntu Yaru Style - Distinct look and feel of the Ubuntu Desktop
 
 ## Projects
 
@@ -62,6 +63,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [meta-flutter](https://github.com/jwinarske/meta-flutter) - Yocto meta layer for recipes related to using Google Flutter Engine
 - [Pangolin Desktop UI](https://github.com/dahliaOS/pangolin_desktop) - Pangolin Desktop UI shell, designed for dahliaOS, written in Flutter.
 - [Quickgui](https://github.com/quickemu-project/quickgui) - A Flutter frontend for quickget and quickemu.
+- [Software App for Ubuntu](https://github.com/ubuntu-flutter-community/software) - Software App for Ubuntu made with Flutter 🧡 💙
 - [Toyota IVI homescreen](https://github.com/toyota-connected/ivi-homescreen) - Embedded Flutter runtime targeting Embedded Linux with Wayland
 - [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) - A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
 - [Ubuntu Desktop Settings](https://github.com/ubuntu-flutter-community/settings) - An unofficial Ubuntu Desktop Settings App made with Flutter.
