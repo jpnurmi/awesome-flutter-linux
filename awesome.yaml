@@ -117,7 +117,7 @@ projects:
     description: An unofficial Ubuntu Desktop Settings App made with Flutter.
     github: ubuntu-flutter-community/settings
   - name: Software App for Ubuntu
-    github: https://github.com/ubuntu-flutter-community/software
+    github: ubuntu-flutter-community/software
   - name: LINUXMON
     github: therexone/linux-mon
   - name: Linux Stats App
