@@ -74,12 +74,15 @@ packages:
   - name: xterm
     pub: xterm
     github: TerminalStudio/xterm.dart
-  - name: Yaru Style
+  - name: Yaru Theme
     pub: yaru
     github: ubuntu/yaru.dart
   - name: Yaru Icons
     pub: yaru_icons
     github: ubuntu/yaru_icons.dart
+  - name: Yaru Colors
+    pub: yaru_colors
+    github: ubuntu/yaru_colors.dart
 
 projects:
   - name: AppImagePool
@@ -112,7 +115,9 @@ projects:
     github: canonical/ubuntu-desktop-installer
   - name: Ubuntu Desktop Settings
     description: An unofficial Ubuntu Desktop Settings App made with Flutter.
-    github: Feichtmeier/settings
+    github: ubuntu-flutter-community/settings
+  - name: Software App for Ubuntu
+    github: https://github.com/ubuntu-flutter-community/software
   - name: LINUXMON
     github: therexone/linux-mon
   - name: Linux Stats App
