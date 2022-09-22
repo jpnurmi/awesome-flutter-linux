@@ -65,6 +65,7 @@ See CONTRIBUTING.md for more details and instructions.
 - [Quickgui](https://github.com/quickemu-project/quickgui) - A Flutter frontend for quickget and quickemu.
 - [Software App for Ubuntu](https://github.com/ubuntu-flutter-community/software) - Software App for Ubuntu made with Flutter 🧡 💙
 - [Toyota IVI homescreen](https://github.com/toyota-connected/ivi-homescreen) - Embedded Flutter runtime targeting Embedded Linux with Wayland
+- [Ubuntu Accomplishsments](https://github.com/UbuntuAccomplishments/viewer) - A gamification of contributions to Ubuntu and the Ubuntu Community
 - [Ubuntu Desktop Installer](https://github.com/canonical/ubuntu-desktop-installer) - A modern implementation of the Ubuntu Desktop installer, using subiquity as a backend and Flutter for the UI.
 - [Ubuntu Desktop Settings](https://github.com/ubuntu-flutter-community/settings) - An unofficial Ubuntu Desktop Settings App made with Flutter.
 
