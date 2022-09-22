@@ -129,6 +129,9 @@ projects:
   - name: Quickgui
     description: A Flutter frontend for quickget and quickemu.
     github: quickgui/quickgui
+  - name: Ubuntu Accomplishsments
+    description: A gamification of contributions to Ubuntu and the Ubuntu Community
+    github: UbuntuAccomplishments/viewer
 
 more:
   - name: awesome
