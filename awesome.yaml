@@ -23,9 +23,6 @@ packages:
   - name: GPIO
     pub: flutter_gpiod
     github: ardera/flutter_gpiod
-  - name: Flutter GTK
-    pub: flutter_gtk
-    github: jesusrp98/flutter_gtk
   - name: fwupd
     pub: fwupd
     github: canonical/fwupd.dart
